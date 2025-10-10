@@ -1,59 +1,60 @@
 ---
 layout: default
-title: <Your Name> - Curriculum Vitae
+title: Charlotte Tama - CC
 permalink: /cv/
 ---
 ## Curriculum Vitae
 
-[Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
+<div style="text-align:center; margin: 1em 0;">
+  <a href="{{ '/assets/CV.pdf' | relative_url }}" download class="btn">Download My CV</a>
+</div>
 
-
-**Email:** [netID@cornell.edu](mailto:netID@cornell.edu) | | | **Phone:** +123 456 7890
+**Email:** [cet65@cornell.edu](mailto:cet65@cornell.edu) | | | **Phone:** 917 539 2694
 
 ---
 
 #### Objective
-Aspiring engineering student with a strong foundation in.... Passionate about ... and eager to apply my knowledge in real-world applications.
+Math, Physics, and Computer Science have captured my curiosity since I can remember. I chose Mechanical Engineering for the opportunity to continue to study all three of my favorite subjects, and to apply them to real-world projects that impact the world around me. I am open to conversations about potential career paths that align with my interests, particularly ones focused on aerospace, flight physics, and computer modeling.
 
 ---
 
 #### Education
 - **Cornell University**  
   *Bachelor of Science in Mechanical and Aerospace Engineering*  
-  GPA: 3.8/4.0 | Graduation: Month, Year
+  GPA: 3.7/4.0 | Graduation: May, 2028
 
-- **[High School Name]**  
+- **School Without Walls High School**  
   *High School Diploma*  
-  Graduation: [Month, Year]
+  Graduation: June, 2024
 
 ---
 
 #### Skills
-- **Software:** Autodesk Fusion 360, SolidWorks, ANSYS  
-- **Programming:** Python, MATLAB  
+- **Software:** SolidWorks  
+- **Programming:** Python, Java  
 - **Tools:** 3D Printing, Laser Cutting  
 
 ---
 
 #### Projects
-- **[Project Title]**:  
-  *[Short Description]*  
-  - Key Achievement 1  
-  - Key Achievement 2  
-
-- **[Project Title]**:  
-  *[Short Description]*  
-  - Key Achievement 1  
-  - Key Achievement 2  
+- **Quadcopter Drone**:  
+  *Constructed quadcopter FPV drone.*  
+  - Constructed quadcopter FPV drone incorporating 30+ mechanical and electrical components.
+  - Configured drone-computer communication using PixHawk flight computer and ArduPilot control software.
+  -  Utilized soldering and small-scale mechanical hand tools.  
 
 ---
 
 #### Work Experience
-- **[Company Name] - Intern**  
-  [Month, Year] - [Month, Year]  
-  - Responsibility 1  
-  - Responsibility 2  
+- **Design Build Fly Project Team - Aerodynamics Subteam Member**  
+  Sept 2025 - Present 
+  - Contributed to development of unmanned, electric powered, radio-controlled aircraft for competition in AIAA Design Build Fly competition.   
 
+**National Air and Space Museum - Docent**  
+  Jan 2023 - Present 
+  - Lead science demonstrations at interactive "discovery stations," interacting with 100+ visitors per hour.
+  - Explain aviation and astronomy topics including the forces of flight, black holes, relativity, and rocketry, tailoring explanations to diverse audiences. 
+  
 ---
 
 #### Achievements & Certifications

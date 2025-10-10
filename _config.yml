@@ -8,12 +8,12 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : Your Name
+title                    : Charlotte Tama Portfolio
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : Your Name
-description              : Your Name - Projects and CV 
-baseurl                  : "" # Set this to your repo name 
+name                     : Charlotte Tama
+description              : Charlotte Tama - Projects and CV 
+baseurl                  : "fa25-portfolio-charlottewastaken" # Set this to your repo name 
 
 # Theme and Style
 theme: jekyll-theme-minimal

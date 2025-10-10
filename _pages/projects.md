@@ -1,18 +1,16 @@
 ---
 layout: default
-title: <Your Name> - Portfolio
+title: Charlotte Tama - Portfolio
 permalink: /projects/
 ---
 
 <div class="gallery-container">
-<div class="project-gallery">
-    {% for project in site.projects %}
-      <div class="gallery-item">
-        <a href="{{ project.url | relative_url }}">
-          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" />
-          <p>{{ project.title}}</p>
-        </a>
-      </div>
-    {% endfor %}
-</div>
+  <div class="project-gallery">
+    <div class="gallery-item">
+      <a href="{{ '/assets/images/portfolio-sketch.png' | relative_url }}">
+        <img src="{{ '/assets/images/portfolio-sketch.png' | relative_url }}" alt="Portfolio Sketch" />
+        <p>Portfolio Sketch</p>
+      </a>
+    </div>
+  </div>
 </div>
