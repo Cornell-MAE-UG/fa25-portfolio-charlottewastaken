@@ -42,7 +42,7 @@ The heat exchanger can be assessed using the control-volume energy balance equat
   <img 
     src="{{ '/assets/images/equation1.png' | relative_url }}" 
     alt="Equation 1"
-    style="width: 100%; height: auto; border-radius: 8px;"
+    style="width: 25%; height: auto; border-radius: 8px;"
   >
   <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
     Equation 1.
@@ -54,7 +54,7 @@ And for liquids like water,
   <img 
     src="{{ '/assets/images/equation2.png' | relative_url }}" 
     alt="Equation 2"
-    style="width: 100%; height: auto; border-radius: 8px;"
+    style="width: 25%; height: auto; border-radius: 8px;"
   >
   <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
     Equation 2.
@@ -66,7 +66,7 @@ Which gives,
   <img 
     src="{{ '/assets/images/equation3.png' | relative_url }}" 
     alt="Equation 3"
-    style="width: 100%; height: auto; border-radius: 8px;"
+    style="width: 25%; height: auto; border-radius: 8px;"
   >
   <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
     Equation 3.
@@ -78,7 +78,7 @@ Since specific heat is known,
   <img 
     src="{{ '/assets/images/equation4.png' | relative_url }}" 
     alt="Equation 4"
-    style="width: 100%; height: auto; border-radius: 8px;"
+    style="width: 25%; height: auto; border-radius: 8px;"
   >
   <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
     Equation 4.
@@ -96,7 +96,6 @@ Based on the control volume energy balance, if the mass flow rates are equal for
     Temperature Change Calculations.
   </p>
 </div>
-
 
 Both counter flow and parallel flow show a disproportionately high heat drop in comparison to the cold rise. This suggests that either 1- the system is not adiabatic, or 2- the mass flow rates are not constant. Since the device can be trusted to maintain relatively constant flow rates, the former is the more likely explanation. 
 
