@@ -3,7 +3,6 @@ layout: project
 title: Thermodyanamics Class Heat Exchanger Analysis
 description: Design Challenge
 technologies: [None]
-image: /assets/images/heat-exchanger.jpg
 ---
 
 <div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
@@ -25,7 +24,7 @@ First, the temperature was measured in the initial hot and cold water reservoirs
 
 <div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
   <img 
-    src="{{ '/assets/images/heat-exchanger-table.jpg' | relative_url }}" 
+    src="{{ '/assets/images/heat-exchanger-table.png' | relative_url }}" 
     alt="Data Table"
     style="width: 100%; height: auto; border-radius: 8px;"
   >
@@ -34,5 +33,72 @@ First, the temperature was measured in the initial hot and cold water reservoirs
   </p>
 </div>
 
-After collecting the data, I analyzed the heat exchanger device using course concepts of control volume energy balance. 
+After collecting the data, I analyzed the heat exchanger device using course concepts of control volume energy balance and heat transfer. 
+
+Note: This analysis is limited by the fact that the mass flow rate, mrate, was not recorded. However, using information about energy balance and heat transfer, we can still draw conclusions about the functionality of the device. 
+
+The heat exchanger can be assessed using the control-volume energy balance equation:
+<div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/equation1.png' | relative_url }}" 
+    alt="Equation 1"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Equation 1.
+  </p>
+</div>
+
+And for liquids like water,
+<div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/equation2.png' | relative_url }}" 
+    alt="Equation 2"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Equation 2.
+  </p>
+</div>
+
+Which gives,
+<div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/equation3.png' | relative_url }}" 
+    alt="Equation 3"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Equation 3.
+  </p>
+</div>
+
+Since specific heat is known,
+<div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/equation4.png' | relative_url }}" 
+    alt="Equation 4"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Equation 4.
+  </p>
+</div>
+
+Based on the control volume energy balance, if the mass flow rates are equal for the hot and cold streams, and the device is adiabatic, the temperature change should be equal for the hot and cold streams. We compare the ratios for both counter flow and parallel flow:
+<div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/calculations.png' | relative_url }}" 
+    alt="Temperature Change Calculations"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Temperature Change Calculations.
+  </p>
+</div>
+
+
+Both counter flow and parallel flow show a disproportionately high heat drop in comparison to the cold rise. This suggests that either 1- the system is not adiabatic, or 2- the mass flow rates are not constant. Since the device can be trusted to maintain relatively constant flow rates, the former is the more likely explanation. 
+
+The conclusion is that the device is not adiabatic, and furthermore, that operating in counter flow rather than parallel flow leads to a larger heat leak in the system. 
 
