@@ -30,7 +30,7 @@ Math, Physics, and Computer Science have captured my curiosity since I can remem
 ---
 
 #### Skills
-- **Software:** SolidWorks  
+- **Software:** SolidWorks, Ansys  
 - **Programming:** Python, Java  
 - **Tools:** 3D Printing, Laser Cutting  
 
@@ -46,26 +46,21 @@ Math, Physics, and Computer Science have captured my curiosity since I can remem
 ---
 
 #### Work Experience
-- **Design Build Fly Project Team - Aerodynamics Subteam Member**  
+- **Design Build Fly Project Team - Aerodynamics and Controls Subteam Member**  
   Sept 2025 - Present 
-  - Contributed to development of unmanned, electric powered, radio-controlled aircraft for competition in AIAA Design Build Fly competition.   
+  -  Design and manufacture the wings, empennage, and control surfaces of radio-controlled aircraft for the AIAA Design/Build/Fly competition. 
+  -  Conduct static and aerodynamic analysis with Ansys and XFLR5. Model aircraft design in SolidWorks.  
 
-**National Air and Space Museum - Docent**  
+-  **National Air and Space Museum - Docent**  
   Jan 2023 - Present 
   - Lead science demonstrations at interactive "discovery stations," interacting with 100+ visitors per hour.
-  - Explain aviation and astronomy topics including the forces of flight, black holes, relativity, and rocketry, tailoring explanations to diverse audiences. 
-  
----
-
-#### Achievements & Certifications
-- [Certification Name], [Issuing Organization], [Year]  
-- [Achievement Name], [Competition/Event], [Year]  
+  - Explain aviation and astronomy topics including the forces of flight, black holes, relativity, and rocketry, tailoring explanations to diverse audiences.  
 
 ---
 
 #### Extracurricular Activities
-- Member of [Club/Organization Name]  
-- Volunteer for [Event/Organization Name]  
+- Member of **Cornell Cybersecurity Club**
+- Treasurer and backpacking guide for **Cornell Outdoor Odyssey**
 
 ---
 
