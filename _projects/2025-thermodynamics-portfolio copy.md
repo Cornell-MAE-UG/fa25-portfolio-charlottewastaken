@@ -86,7 +86,7 @@ Since specific heat is known,
 </div>
 
 Based on the control volume energy balance, if the mass flow rates are equal for the hot and cold streams, and the device is adiabatic, the temperature change should be equal for the hot and cold streams. We compare the ratios for both counter flow and parallel flow:
-<div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 300px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/calculations.png' | relative_url }}" 
     alt="Temperature Change Calculations"
