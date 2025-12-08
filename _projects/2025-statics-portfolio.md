@@ -13,7 +13,7 @@ For my Statics and Mechanics of Solids class at Cornell University, we were give
 
 We were provided a 2D design space of 150cm long and 50cm tall, a rigid bar of a fixed length, and 3 pin supports, of which two need to be mounted on the ground, and a linear actuator to be chosen from an online catalog. The objective was to design a frame/mechanism to lift the maximum possible weight to the highest possible height, first under the assumption of a rigid bar, and second under the assumption of a non-rigid bar. 
 
-## Design Degrees of Freedom
+## Degrees of Freedom
 
 We had the freedom to select the following: the mechanism's orientation/geometry, the type of actuator, the length to which the actuator was extended, and the length of the bar.
 
@@ -55,7 +55,7 @@ First, I created free body diagrams for the bar and the actuator:
 
 Using the bar FBD, the following two equilibrium equations are written:
 
-<div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 300px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/statics-design-challenge-equilibrium.jpg' | relative_url }}" 
     alt="Equilibrium equations"
@@ -68,7 +68,7 @@ Using the bar FBD, the following two equilibrium equations are written:
 
 From (1), we see that the reaction force at A (Ra) is equivalent to the force supplied by the actuator (Fa). We use this equivalence to simplify (2) and solve for Fw:
 
-<div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 300px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/statics-design-challenge-solving.jpg' | relative_url }}" 
     alt="Solving for Fw"
@@ -81,7 +81,7 @@ From (1), we see that the reaction force at A (Ra) is equivalent to the force su
 
 Given that the maximum Fa is 36kN, we have:
 
-<div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/statics-design-challenge-expression.jpg' | relative_url }}" 
     alt="Expression for Fw"
