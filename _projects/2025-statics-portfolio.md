@@ -190,7 +190,7 @@ The constraints for this design choice are that the vertical deflection of the b
   </p>
 </div>
 
-To ensure that the design is the most mass-efficient possible, I began by choosing a cross-section shape for the beam, ensuring selection of a cross-section shape that minimizes mass while maximizing I. Considering this, I selected the W-Flange, in particular, the W 100x19.3 (which was the narrowest available W-Flange to ensure it fit in the design space). 
+To prioritize material efficiency, I decided to choose the cross-section first (looking for something narrow and not material dense), then use its moment of inertia to find a material with an appropriate modulues of elasticity. To maximize material efficiency, I selected the W-Flange from my class's textbook, in particular, the W 100x19.3 (which was the narrowest available W-Flange to ensure it fit in the design space) --- shown below.
 
 <div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
   <img 
@@ -200,5 +200,35 @@ To ensure that the design is the most mass-efficient possible, I began by choosi
   >
   <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
     Figure 12. W100x19.3 Flange.
+  </p>
+</div>
+
+Using the moment of inertia of the flange, I calculated that the modulus of elasticity (E)of the beam's material must be greater than or equal to 32.7 GPa in order to satisfy the 2% condition:
+
+<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/statics-design-challenge-E.jpg' | relative_url }}" 
+    alt="Modulus of elasticity calculation"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Figure 13. Modulus of elasticity calculation.
+  </p>
+</div>
+
+Utilizing my class's textbook, I looked for materials with E values close to 32.7 without being below. I noticed that magnesium alloy AZ31 was the closest, with E = 45 GPa. Additionally, it was less dense than other close competitors, including concrete, sandsonte, and magnesium alloy AZ80, making it the most mass-efficient.  
+
+Recalculating the total deflection, it is shown that the total deflection of the beam is 0.485cm, ~0.9% of the beam's total length, satisfying the <2% condition.
+
+c) Final beam diagram
+
+<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/statics-design-challenge-finaldiagram.jpg' | relative_url }}" 
+    alt="Final beam design diagram"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Figure 14. Final beam design - length and cross-section.
   </p>
 </div>
