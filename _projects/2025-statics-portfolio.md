@@ -96,7 +96,7 @@ Therefore, the theoretical maximum weight occurs when theta = 90 degrees.
 
 ## My Design - Final
 
-However, this geometry would require pins A and B to be coincident, an impractical and unstable design choice. Instead, 80 degrees was chosen, a degree measurement that achieves ~98% of the theoretical maximum, while also being stable practically achievable. Evaluating the above equation for Fw, we see that the maximum weight supported by this design is 70.91kN. Through additional geometry calculation, we find that the maximum height the weight can be lifted to is 49.24. 
+However, this geometry would require pins A and B to be coincident, an impractical and unstable design choice. Instead, 80 degrees was chosen, a degree measurement that achieves ~98% of the theoretical maximum weight, while also being stable and practically achievable. Evaluating the above equation for Fw, we see that the maximum weight supported by this design is 70.91kN. Through additional geometry calculation, we find that the maximum height the weight can be lifted to is 49.24. 
 
 The final design geometry is shown below (not to scale):
 
