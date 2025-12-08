@@ -122,7 +122,7 @@ To begin to find the maximum deflection, I revisited the FBD for the bar shown p
 
 Using the FBD, it is seen that the following transverse forces act on the bar:
 
-<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 400px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/statics-design-challenge-transverseforces.jpg' | relative_url }}" 
     alt="Transverse forces expressions"
@@ -135,7 +135,7 @@ Using the FBD, it is seen that the following transverse forces act on the bar:
 
 Summing these, and taking into account the assumption noted above, the net transverse force on the beam is calculated to be approximately 24.63kN: 
 
-<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 350px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/statics-design-challenge-nettransverse.jpg' | relative_url }}" 
     alt="Net transverse forces expression"
@@ -146,9 +146,9 @@ Summing these, and taking into account the assumption noted above, the net trans
   </p>
 </div>
 
-The next step is to use the transverse force value to derive an expression for the total deflection of the beam. For a cantilever beam, the expression for deflection, y(x), in terms of transverse force applied, is:
+The next step is to use the transverse force value to derive an expression for the total deflection of the beam. For a cantilever beam, the expression for deflection, y(x), in terms of transverse force, is:
 
-<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 170px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/statics-design-challenge-deflection.jpg' | relative_url }}" 
     alt="Cantilever beam deflection expression"
@@ -161,7 +161,7 @@ The next step is to use the transverse force value to derive an expression for t
 
 Plugging in values for transverse force and length, we derive that deflection is:
 
-<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 300px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/statics-design-challenge-deflectionevaluation.jpg' | relative_url }}" 
     alt="Cantilever beam deflection evaluation"
@@ -179,7 +179,7 @@ As clear from Figure 10, the total deflection of the beam cannot fully be analyz
 
 The constraints for this design choice are that the vertical deflection of the beam must be less than 2% of its total length and the design must be the most mass-efficient possible. This allows us to determine a minimum value of EI: 
 
-<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 300px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/statics-design-challenge-EI.jpg' | relative_url }}" 
     alt="Calculating EI"
@@ -192,7 +192,7 @@ The constraints for this design choice are that the vertical deflection of the b
 
 To prioritize material efficiency, I decided to choose the cross-section first (looking for something narrow and not material dense), then use its moment of inertia to find a material with an appropriate modulues of elasticity. To maximize material efficiency, I selected the W-Flange from my class's textbook, in particular, the W 100x19.3 (which was the narrowest available W-Flange to ensure it fit in the design space) --- shown below.
 
-<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 200px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/statics-design-challenge-flange.jpg' | relative_url }}" 
     alt="Flange drawing"
@@ -205,7 +205,7 @@ To prioritize material efficiency, I decided to choose the cross-section first (
 
 Using the moment of inertia of the flange, I calculated that the modulus of elasticity (E)of the beam's material must be greater than or equal to 32.7 GPa in order to satisfy the 2% condition:
 
-<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 350px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/statics-design-challenge-E.jpg' | relative_url }}" 
     alt="Modulus of elasticity calculation"
@@ -222,7 +222,7 @@ Recalculating the total deflection, it is shown that the total deflection of the
 
 c) Final beam diagram
 
-<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+<div style="max-width: 650px; margin: 1.5rem auto; text-align: center;">
   <img 
     src="{{ '/assets/images/statics-design-challenge-finaldiagram.jpg' | relative_url }}" 
     alt="Final beam design diagram"
