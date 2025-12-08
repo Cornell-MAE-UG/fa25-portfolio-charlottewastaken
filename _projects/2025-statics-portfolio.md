@@ -107,6 +107,11 @@ The final design geometry is shown below (not to scale):
     style="width: 100%; height: auto; border-radius: 8px;"
   >
   <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
-    Figure 6. Final design.
+    Figure 6. Design challenge final design with all unknowns determined.
   </p>
 </div>
+
+
+## Part 2 - Non-Rigid Bar
+
+The second part of the activity was to modify the scenario to the condition in which the bar is no longer rigid. 
