@@ -31,7 +31,7 @@ We had the freedom to select the following: the mechanism's orientation/geometry
 </div>
 
 
-I oriented my design as shown in the sketch, with the bar and actuator both fixed to pin supports on the ground, and attached to each other at a third pin support, C. The weight was hung from the bar, attached at the bar's highest point in order to optimize the weight's final height. I selected the IMA 22 actuator because it had the highest force to length ratio among the actuators that were short enough to fit in the design space. The IMA 22 can support up to 36kN, and has a maximum length of 50cm. 
+I oriented my design as shown in the sketch, with the bar and actuator both fixed to pin supports on the ground, and attached to each other at a third pin support, C. The weight was hung from the bar, attached at the bar's highest point in order to optimize the weight's final height. I selected the IMA ("Integrated Servo Actuator") because it had the highest force to length ratio among the actuators that were short enough to fit in the design space. The IMA can support up to 36kN, and has a maximum length of 50cm. 
 
 I chose to extend the actuator to its full length of 50cm to optimize the final height of the weight, and I chose for the bar to also have a length of 50cm in order to simplify the preliminary design geometry for analysis. With this decided, the next step was to determine the optimal distance between the two ground pin supports, A and B. 
 
@@ -114,4 +114,91 @@ The final design geometry is shown below (not to scale):
 
 ## Part 2 - Non-Rigid Bar
 
-The second part of the activity was to modify the scenario to the condition in which the bar is no longer rigid. 
+The second part of the activity was to modify the scenario to the condition in which the bar is no longer rigid. Using my final design from part 1, my goals for part 2 were to 1) find the maximum deflection in the bar (now modeled as a beam), 2) choose a beam design such that vertical deflection is below 2% of the beam's length and is the most mass-efficient possible, and 3) present my final beam design in a diagram. 
+
+1) Maximum deflection
+
+To begin to find the maximum deflection, I revisited the FBD for the bar shown previously (Figure 2). For this problem, I assumed that only the transverse loads acting on the beam were impacting its deflection, and additionally, that Fw and Fa were acting in the same direction (note: this is not accurate to the FBD, it is purely being done as an exercise). 
+
+Using the FBD, it is seen that the following transverse forces act on the bar:
+
+<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/statics-design-challenge-transverseforces.jpg' | relative_url }}" 
+    alt="Transverse forces expressions"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Figure 7. Expressions for transverse forces.
+  </p>
+</div>
+
+Summing these, and taking into account the assumption noted above, the net transverse force on the beam is calculated to be approximately 24.63kN: 
+
+<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/statics-design-challenge-nettransverse.jpg' | relative_url }}" 
+    alt="Net transverse forces expression"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Figure 8. Expression for total transverse forces.
+  </p>
+</div>
+
+The next step is to use the transverse force value to derive an expression for the total deflection of the beam. For a cantilever beam, the expression for deflection, y(x), in terms of transverse force applied, is:
+
+<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/statics-design-challenge-deflection.jpg' | relative_url }}" 
+    alt="Cantilever beam deflection expression"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Figure 9. Expression for deflection in a cantilever beam.
+  </p>
+</div>
+
+Plugging in values for transverse force and length, we derive that deflection is:
+
+<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/statics-design-challenge-deflectionevaluation.jpg' | relative_url }}" 
+    alt="Cantilever beam deflection evaluation"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Figure 10. Evaluated expression for deflection.
+  </p>
+</div>
+
+
+b) Choosing a beam design 
+
+As clear from Figure 10, the total deflection of the beam cannot fully be analyzed without values for E and I, which cannot be determined until the beam's shape and material have been selected. 
+
+The constraints for this design choice are that the vertical deflection of the beam must be less than 2% of its total length and the design must be the most mass-efficient possible. This allows us to determine a minimum value of EI: 
+
+<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/statics-design-challenge-EI.jpg' | relative_url }}" 
+    alt="Calculating EI"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Figure 11. Calculating EI.
+  </p>
+</div>
+
+To ensure that the design is the most mass-efficient possible, I began by choosing a cross-section shape for the beam, ensuring selection of a cross-section shape that minimizes mass while maximizing I. Considering this, I selected the W-Flange, in particular, the W 100x19.3 (which was the narrowest available W-Flange to ensure it fit in the design space). 
+
+<div style="max-width: 180px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/statics-design-challenge-flange.jpg' | relative_url }}" 
+    alt="Flange drawing"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Figure 12. W100x19.3 Flange.
+  </p>
+</div>
