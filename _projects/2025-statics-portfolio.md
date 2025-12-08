@@ -3,20 +3,8 @@ layout: project
 title: Statics Class Design Project
 description: Design Challenge
 technologies: [None]
-image: /assets/images/portfolio-sketch.png
+image: /assets/images/statics-design-challenge-finaldesign.jpg
 ---
-
-<div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
-  <img 
-    src="{{ '/assets/images/statics-design-challenge-preliminarydesign.jpg' | relative_url }}" 
-    alt="Design Challenge Preliminary Diagram"
-    style="width: 100%; height: auto; border-radius: 8px;"
-  >
-  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
-    Figure 1. Design challenge preliminary diagram with unknowns.
-  </p>
-</div>
-
 ## Problem Definition
 
 For my Statics and Mechanics of Solids class at Cornell University, we were given a design challenge to design a frame or mechanism capable of lifting the maximum possible weight to the highest possible height using an actuator, a bar, and three pin supports. We were asked to analyze the loads and deformation of the mechanism under two cases: first, considering the bar to be rigid, and second, considering the bar to be non-rigid (a beam). 
@@ -29,7 +17,19 @@ We were provided a 2D design space of 150cm long and 50cm tall, a rigid bar of a
 
 We had the freedom to select the following: the mechanism's orientation/geometry, the type of actuator, the length to which the actuator was extended, and the length of the bar.
 
-## My Design
+## My Design - Preliminary 
+
+<div style="max-width: 600px; margin: 1.5rem auto; text-align: center;">
+  <img 
+    src="{{ '/assets/images/statics-design-challenge-preliminarydesign.jpg' | relative_url }}" 
+    alt="Design Challenge Preliminary Diagram"
+    style="width: 100%; height: auto; border-radius: 8px;"
+  >
+  <p class="caption" style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
+    Figure 1. Design challenge preliminary diagram with unknowns.
+  </p>
+</div>
+
 
 I oriented my design as shown in the sketch, with the bar and actuator both fixed to pin supports on the ground, and attached to each other at a third pin support, C. The weight was hung from the bar, attached at the bar's highest point in order to optimize the weight's final height. I selected the IMA 22 actuator because it had the highest force to length ratio among the actuators that were short enough to fit in the design space. The IMA 22 can support up to 36kN, and has a maximum length of 50cm. 
 
@@ -93,6 +93,8 @@ Given that the maximum Fa is 36kN, we have:
 </div>
 
 Therefore, the theoretical maximum weight occurs when theta = 90 degrees. 
+
+## My Design - Final
 
 However, this geometry would require pins A and B to be coincident, an impractical and unstable design choice. Instead, 80 degrees was chosen, a degree measurement that achieves ~98% of the theoretical maximum, while also being stable practically achievable. Evaluating the above equation for Fw, we see that the maximum weight supported by this design is 70.91kN. Through additional geometry calculation, we find that the maximum height the weight can be lifted to is 49.24. 
 
