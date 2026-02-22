@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Charlotte Tama - CC
-permalink: /cv/
+permalink: /assets/Charlotte Tama Resume Jan25.pdf
 ---
 ## Curriculum Vitae
 
 <div style="text-align:center; margin: 1em 0;">
-  <a href="{{ '/assets/CV.pdf' | relative_url }}" download class="btn">Download My CV</a>
+  <a href="{{ '/assets/Charlotte Tama Resume Jan25.pdf' | relative_url }}" download class="btn">Download My CV</a>
 </div>
 
 **Email:** [cet65@cornell.edu](mailto:cet65@cornell.edu) | | | **Phone:** 917 539 2694

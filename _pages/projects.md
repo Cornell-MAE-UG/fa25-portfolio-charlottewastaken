@@ -19,8 +19,8 @@ permalink: /projects/
       </a>
     </div>
     <div class="gallery-item">
-      <a href="{{ '/projects/2026-mechanical-design-client-outline/' | relative_url }}">
-        <img src="{{ '/assets/images/heat-exchanger.jpg' | relative_url }}" alt="Mechanical Design Open Design Project" />
+      <a href="{{ '/assets/TreesofDoom_ClientOutline.pdf/' | relative_url }}">
+        <img src="{{ '/assets/ODP Cover Photo.jpg' | relative_url }}" alt="Mechanical Design Open Design Project" />
         <p>Mechanical Design Open Design Project Client Outline</p>
       </a>
     </div>
