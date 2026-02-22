@@ -19,7 +19,7 @@ permalink: /projects/
       </a>
     </div>
     <div class="gallery-item">
-      <a href="{{ '/assets/TreesofDoom_ClientOutline.pdf/' | relative_url }}">
+      <a href="{{ '/assets/TreesofDoom_ClientOutline.pdf' | relative_url }}">
         <img src="{{ '/assets/ODP Cover Photo.jpg' | relative_url }}" alt="Mechanical Design Open Design Project" />
         <p>Mechanical Design Open Design Project Client Outline</p>
       </a>
