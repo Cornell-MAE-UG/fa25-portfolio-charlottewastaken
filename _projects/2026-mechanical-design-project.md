@@ -4,9 +4,9 @@ title: Mechanical Design Class Open Design Project
 description: Open Design Project
 technologies: Fusion360
 ---
-  <div style="max-width: 260px; margin: 1.5rem auto; text-align: center;">
+  <div style="max-width: 500px; margin: 1.5rem auto; text-align: center;">
   <img 
-    src="{{ '/assets/images/Assembly.png' | relative_url }}" 
+    src="{{ '/assets/images/p1.png' | relative_url }}" 
     alt="Cover photo"
     style="width: 100%; height: auto; border-radius: 8px;"
   >
@@ -16,7 +16,12 @@ technologies: Fusion360
 
 As part of my Introduction to Mechanical Design class at Cornell University, I took part in a group Open Design Project (ODP), in which my group was tasked with designing and building a device that would tackle the problem of the invasive Spotted Lanternfly (SLF) species' contamination of grape crops in New York State. Our group's solution was a filtration device that would separate the SLF from the grapes. This page serves to document our design process, manufacturing steps, testing, iteration, and conclusions. 
 
-In the [Client Outline & Pitch](#client-outline--pitch) section, the problem at hand is outlined and our solution is introduced. In the [Functional Prototype](#functional-prototype) section, the manufacturability and functionality of our design is assessed. Peruse these pages to follow along with and explore our design process, technical decisions, and conclusions.
+In the [Client Outline & Pitch](#client-outline--pitch) section, the problem at hand is outlined and our solution is introduced. In the [Functional Prototype](#functional-prototype) section, the manufacturability and functionality of our design is assessed. Peruse these pages to follow along with and explore our design process, technical decisions, and conclusions. Last, in the [Final Report](#final-report) section, our final report for the Open Design Project is given, summarizing our final prototype, testing, results, scaling analysis, and recommendation.
+
+### Table of Contents:
+1. [Client Outline & Pitch](#client-outline--pitch)
+2. [Functional Prototype](#functional-prototype)
+3. [Final Report](#final-report)
 
 ## Client Outline & Pitch
 
@@ -306,6 +311,170 @@ Success criteria:
 2. The cylinder should be able to hold liquid for at least 15 minutes at a time so that it will not leak for the duration of the filtering process for a batch of the mixture.
 3. One batch of mixture (filling one-third of the cylinder with an average weight of 2 kilograms) should be able to go through the entire rotation and filtering process within 3 minutes so that multiple batches can be filtered efficiently.
 4. Particles with a density of 500 kg/m3 (SLF) should float to the very top of the cylinder so that they can be skimmed off, while particles with a density of 1100 kg/m3 (grapes) should sink so that they do not interfere with the SLF collection. This is relevant to our exhibit-day presentation of the prototype because we will demonstrate its function using a sample mixture of a liquid containing some particles with lower density and some with higher density, which will simulate the harvest mixture of grapes and SLF. The demonstration will prove the success of our design if we are able to skim the particles with a density of 500 kg/m3 off the top of the liquid.
+
+
+## Final Report
+
+*This section provides our final report for the Open Design Project, summarizing our final prototype, testing, results, scaling analysis, and recommendation.*
+
+<div class="report-page" style="max-width: 850px; margin: 2rem auto; padding: 2rem 2.4rem; background: white; border: 1px solid #ddd; box-shadow: 0 4px 18px rgba(0,0,0,0.08); font-family: Georgia, 'Times New Roman', serif; line-height: 1.45; color: #111;">
+
+  <h1 style="font-size: 1.55rem; text-decoration: underline; margin-bottom: 1rem;">
+    Wine Grape Post-Harvest Filtration
+  </h1>
+
+  <p><strong>Clients:</strong> Cornell CALS Extension / E&amp;J Gallo Winery / National Grape</p>
+  <p><strong>Trees of Doom:</strong> Charlotte Tama, Hillary Browne, Rishabh Dholakia, Sava Iliev, Yhanna Priester</p>
+
+  <h2>Grape Harvest Integrated Filtration System</h2>
+
+  <p>
+    Spotted lanternflies (SLF) damage grape vines and end up in the harvested grape and juice mixture. More than 0.1% foreign matter in harvested grape batches results in entire 22-ton batches of harvest being rejected per FDA regulation [1]. Contamination is tested in 1000g samples, and SLF weigh 0.5–1.0g each, meaning that the presence of just 1–2 bugs in a batch can be detrimental [1]. <strong>Ultimately, the rejection of grape harvest batches due to foreign matter presence decreases New York state vineyard profits by millions of dollars per year.</strong>
+  </p>
+
+  <p>
+    Trees of Doom has developed a small-scale mechanical filter to remove SLF from harvested mixture post-harvest. Unlike preventative methods, removal at this stage ensures that SLF are removed for good. Our prototype allows the user to strain out the juice from harvest and then use water density separation to isolate and remove SLF from solid mass. The design requires no electrical power and features food-safe bearings and a robust design, making it cheap and durable.
+  </p>
+
+  <p>
+    We conducted a variety of tests to assess the viability of our prototype for continued development. Our verdict is that the fundamental mechanism of our design functions as intended; however, limits on scalability make it best suited for use on small-scale organic vineyards and empirical testing should still be conducted with real grapes and SLF to validate effectiveness.
+  </p>
+
+  <h2>Final Prototype and Application</h2>
+
+  <p>Our final prototype is shown below:</p>
+
+  <figure style="text-align: center; margin: 1.5rem auto;">
+    <img src="{{ '/assets/images/p1.png' | relative_url }}" alt="Final prototype" style="max-width: 360px; width: 100%; border-radius: 6px;">
+    <figcaption style="font-style: italic; font-size: 0.9rem; margin-top: 0.4rem;">Figure 1: Final prototype.</figcaption>
+  </figure>
+
+  <p>
+    The harvested grape juice, grapes, and SLF mixture can be poured into one of the tri-sections of the cylinder, and the base is rotated in a sequence such that the three mixture components can be separated. First, the grape juice is filtered out as the mixture is poured over the mesh base section. Then, SLF and grapes are separated with the addition of water, as SLF float while grapes sink. Finally, the water is filtered out and the untarnished grapes are collected.
+  </p>
+
+  <figure style="text-align: center; margin: 1.5rem auto;">
+    <img src="{{ '/assets/images/p2.png' | relative_url }}" alt="Use sequence" style="max-width: 520px; width: 100%; border-radius: 6px;">
+    <figcaption style="font-style: italic; font-size: 0.9rem; margin-top: 0.4rem;">Figure 2: Use sequence.</figcaption>
+  </figure>
+
+  <p>The steps for assembly of our final prototype are detailed below:</p>
+
+  <ol>
+    <li>Machine the shaft to create a hex on one end and threading on the other.</li>
+    <li>3D print the base and cylinder out of PLA.</li>
+    <li>Cut mesh to the size of the base piece’s mesh indent. Secure with epoxy.</li>
+    <li>Press-fit the shaft into the base and bearings into the cylinder.</li>
+    <li>Cut and stretch the O-ring around the base. Cut and insert rubber flaps into the cylinder.</li>
+    <li>Assemble shaft + base with cylinder and secure with shaft collars. Screw handle on top.</li>
+    <li>Support the base from below by inserting bolts and bearings through the cylinder bolt holes.</li>
+  </ol>
+
+  <h2>Testing and Results</h2>
+
+  <p>We defined success criteria for our design as follows:</p>
+
+  <ul>
+    <li>One standard load of harvested grape mixture should be fully filtered within 3 minutes for efficient processing.</li>
+    <li>Particles with a density of 500 kg/m<sup>3</sup> should float to the top of the cylinder, while particles with a density of 1100 kg/m<sup>3</sup> should sink.</li>
+    <li>Water retention should be sufficient such that per cycle, water need only be added once.</li>
+  </ul>
+
+  <p>
+    Three mechanical tests were used to roughly evaluate our success criteria: a rotation test, a water retention test, and a weight test. These tests were repeated with each improved prototype.
+  </p>
+
+  <figure style="text-align: center; margin: 1.5rem auto;">
+    <img src="{{ '/assets/images/water_test.png' | relative_url }}" alt="Water retention test" style="max-width: 220px; width: 100%; border-radius: 6px;">
+    <figcaption style="font-style: italic; font-size: 0.9rem; margin-top: 0.4rem;">
+      Figure 3: Water retention test. Blue clay = grape density &amp; white styrofoam = SLF density.
+    </figcaption>
+  </figure>
+
+  <p>
+    We iterated through two designs before reaching our final prototype. Prototype 1 featured a tri-base design but no sealing mechanisms, making it very leaky. Prototype 2 featured an O-ring and rubber divider flaps for sealing, but was load-limited due to the base being held up with just a press-fit. Our final design accounted for these challenges with a tri-sector design, O-ring and rubber flaps, and additional bearing and shaft collar supports for the base.
+  </p>
+
+  <figure style="text-align: center; margin: 1.5rem auto;">
+    <img src="{{ '/assets/images/p3.png' | relative_url }}" alt="Prototype improvements" style="max-width: 360px; width: 100%; border-radius: 6px;">
+    <figcaption style="font-style: italic; font-size: 0.9rem; margin-top: 0.4rem;">
+      Figure 4: Prototype improvements: O-ring, rubber divider flaps, and base support.
+    </figcaption>
+  </figure>
+
+  <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem;">
+    <thead>
+      <tr style="border-top: 1px solid #111; border-bottom: 1px solid #111;">
+        <th style="text-align: left; padding: 0.4rem;">Prototype</th>
+        <th style="padding: 0.4rem;">Rotation</th>
+        <th style="padding: 0.4rem;">Water Retention</th>
+        <th style="padding: 0.4rem;">Max. Weight</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 0.4rem;">Prototype 1</td>
+        <td style="text-align: center;">Easy</td>
+        <td style="text-align: center;">10 sec</td>
+        <td style="text-align: center;">2 kg</td>
+      </tr>
+      <tr>
+        <td style="padding: 0.4rem;">Prototype 2</td>
+        <td style="text-align: center;">Difficult</td>
+        <td style="text-align: center;">52 sec</td>
+        <td style="text-align: center;">2 kg</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #111;">
+        <td style="padding: 0.4rem;">Final Prototype</td>
+        <td style="text-align: center;">Moderate</td>
+        <td style="text-align: center;">64 sec</td>
+        <td style="text-align: center;">8 kg</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="text-align: center; font-style: italic; font-size: 0.9rem;">
+    Table 1: Comparison of prototype performance.
+  </p>
+
+  <h2>Conclusion and Recommendation</h2>
+
+  <p>
+    Based on our prototyping and testing, we conclude that filtering grapes and SLF based on density is feasible, but further research is needed to assess the reliability of the density difference and to refine the success criterion for particle separation. Additionally, real-world implementation would likely be limited in scale and impractical for large commercial harvesting applications.
+  </p>
+
+  <p>
+    However, a moderately scaled-up version of the prototype may be useful for small-batch vineyards. At this scale, grape batches weigh approximately 1 ton, occupying roughly 1 m<sup>3</sup>, and would require a cylinder of 2 m height and 0.4 m radius. In this case, a torque of ~600 N·m would be required to rotate the device at a constant rate. At 3 RPM, this corresponds to ~188 W—an achievable power output for a single human.
+  </p>
+
+  <div style="background: #f7f7f7; border-left: 4px solid #999; padding: 1rem; margin: 1.5rem 0; font-size: 0.9rem;">
+    <p><strong>Geometry:</strong> 1 m<sup>3</sup> = πr<sup>2</sup>h → r = 0.4 m, h = 2 m</p>
+    <p><strong>Total torque:</strong> T<sub>total</sub> = T<sub>sides</sub> + T<sub>base</sub> ≈ 120 N·m + 478 N·m ≈ 600 N·m</p>
+    <p><strong>Power at 3 RPM:</strong> P = Tω = 600 × (2π × 3 / 60) ≈ 188 W</p>
+  </div>
+
+  <p>
+    Thus, the power required for operation at small-batch vineyards is within a human’s comfortable power threshold. The device also aligns with the produced-by-hand ethos of small-batch vineyards. Moreover, the device is cost-effective. Our prototype cost a total of $140, and we estimate a maximum cost of $1000 for the scaled small-batch vineyard version.
+  </p>
+
+  <p>
+    For larger vineyards, several scaling problems arise. The increased harvest loads, approximately 22 tons, would preclude manual device operation and require a powerful motor. Additionally, the prototype would require redesign to support the massive load while allowing for smooth rotation and preventing leakage. Last, large batches may prevent SLF and grapes from fully undergoing the density separation our device relies upon.
+  </p>
+
+  <p>
+    Thus, we recommend limiting implementation of our device to small-scale vineyards, and suggest further research into methods for preventing leakage without impeding rotation and into the reliability of the SLF-grape density difference.
+  </p>
+
+  <h2>References, BOM, and Final Poster</h2>
+
+  <p>[1] Bekelja, K. and Russo, J. “MAE 2250 - Spotted Lanternfly Presentation,” Cornell IPM and New York State Integrated Pest Management, 2026.</p>
+
+  <figure style="text-align: center; margin: 1.5rem auto;">
+    <img src="{{ '/assets/images/p5.png' | relative_url }}" alt="Final poster" style="max-width: 100%; width: 100%; border-radius: 6px;">
+    <figcaption style="font-style: italic; font-size: 0.9rem; margin-top: 0.4rem;">Figure 5: Final poster.</figcaption>
+  </figure>
+
+</div>
 
   ---
 
