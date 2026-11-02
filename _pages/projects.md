@@ -24,5 +24,10 @@ permalink: /projects/
         <p>Mechanical Design Open Design Project</p>
       </a>
     </div>
+    <div class="gallery-item">
+      <a href="{{ '/projects/fluid-dynamics-dissection/' | relative_url }}">
+        <p>Fluid Dynamics Dissection</p>
+      </a>
+    </div>
   </div>
 </div>
